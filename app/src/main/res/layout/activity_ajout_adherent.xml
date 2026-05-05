@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".AjoutAdherentActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvAjoutTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ajouter un Adhérent"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/etNom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Nom"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@id/tvAjoutTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/etPrenom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Prénom"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/etNom"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/etMail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/etPrenom"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/etDateNaissance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Date de naissance (AAAA-MM-JJ)"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/etMail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/etNumTel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Téléphone"
+            android:inputType="phone"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/etDateNaissance"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/etAdresse"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Adresse"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/etNumTel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Mot de passe"
+            android:inputType="textPassword"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/etAdresse"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/etRole"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Rôle (ex: admin, user)"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/etPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/etAbonnement"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="ID Abonnement"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/etRole"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Ajouter l'adhérent"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@id/etAbonnement"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
