@@ -31,6 +31,9 @@ public interface ApiService {
     @POST("api/AdherentController")
     Call<Void> addAdherent(@Body AdherentModel adherent);
 
+    @PUT("api/AdherentController/{id}")
+    Call<Void> updateAdherent(@Path("id") int id, @Body AdherentModel adherent);
+
     @DELETE("api/AdherentController/{id}")
     Call<Void> deleteAdherent(@Path("id") int id);
 }

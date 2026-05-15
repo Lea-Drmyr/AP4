@@ -53,7 +53,10 @@ public class AdminActivity extends AppCompatActivity {
         adapter.setOnItemActionListener(new AdherentRecyclerAdapter.OnItemActionListener() {
             @Override
             public void onModify(AdherentModel adherent) {
-                Toast.makeText(AdminActivity.this, "Modifier : " + adherent.getNom(), Toast.LENGTH_SHORT).show();
+                // On passe l'objet adherent à l'activité de modification
+                Intent intent = new Intent(AdminActivity.this, AjoutAdherentActivity.class);
+                intent.putExtra("ADHERENT_DATA", adherent);
+                startActivity(intent);
             }
 
             @Override
